@@ -9,7 +9,7 @@ describe('BrightnessMeter', () => {
     expect(container.innerHTML).toMatchSnapshot()
   })
 
-  it('Left icon highlighted when value < optimum', () => {
+  it('Left icon is highlighted when value < optimum', () => {
     const { container } = render(BrightnessMeter,{value:0.5,optimum:0.6})
     expect(container.innerHTML).toMatchSnapshot()
   })

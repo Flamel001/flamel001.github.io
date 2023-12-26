@@ -3,13 +3,14 @@
 
   export let min: number, max: number, value: number;
 
-  $: if (max < min) max = min + 1;
-
+  $: if (max < min) {
+    max = min + 1;
+    value = min;
+  }
   $: if (value > max) value = max;
-
   $: if (value < min) value = min;
 
-  // you can change and it will work just fine :)
+  // you can change linesAmount and it will work just fine :) But for big number probably it won't fit the container
   const linesAmount = 7;
 
   const lineLength = 1 / linesAmount;

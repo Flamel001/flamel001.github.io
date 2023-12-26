@@ -9,7 +9,7 @@
     value = 0;
 </script>
 
-<div class="@container flex gap-7">
+<div class="@container flex gap-7 items-center">
   <Month isDimmed={value >= optimum} />
   <Bar {min} {max} bind:value />
   <Sun isDimmed={value < optimum} />
