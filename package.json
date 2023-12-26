@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://flamel001.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,7 +15,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "predeploy": "npm run story:build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .histoire/dist"
   },
   "devDependencies": {
     "@histoire/plugin-svelte": "^0.17.6",
