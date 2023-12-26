@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [svelte()],
   test: {
     globals: true,
-    environment: 'happy-dom'
+    environment: 'happy-dom',
   }
 })
